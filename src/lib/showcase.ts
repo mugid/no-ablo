@@ -6,14 +6,22 @@ export type ShowcaseItem = {
 
 export const showcaseItems: ShowcaseItem[] = [
   {
-    slug: "press-button",
-    title: "Press Button",
-    description: "A button with tactile press feedback.",
+    slug: "detached-letters",
+    title: "Detached Letters",
+    description:
+      "Letters start as a sentence — click and drag to throw them apart inside the showcase box.",
   },
   {
-    slug: "stagger-fade",
-    title: "Stagger Fade",
-    description: "Text that reveals with a staggered fade-in.",
+    slug: "glass-reveal",
+    title: "Glass Reveal",
+    description:
+      "Frosted glass obscures text until a radial spotlight follows your cursor.",
+  },
+  {
+    slug: "tooltip-text",
+    title: "Tooltip Text",
+    description:
+      "A paragraph with a highlighted word that reveals its meaning on hover.",
   },
 ];
 

@@ -27,12 +27,16 @@ export default async function ComponentPage({ params }: PageProps) {
   return (
     <div className="flex flex-col gap-10">
       <div className="max-w-lg">
-        <h1 className="text-3xl font-medium tracking-tight">{item.title}</h1>
-        <p className="mt-2 text-sm text-muted-foreground">{item.description}</p>
+        <h1 className="text-base font-medium tracking-tight">{item.title}</h1>
+        <p className="mt-2 text-base text-muted-foreground">{item.description}</p>
       </div>
 
-      <div className="flex min-h-64 items-center justify-center rounded-xl border border-border bg-card p-12">
-        <Component />
+      <div className="rounded-xl border border-border p-6">
+        <div className="relative min-h-64 overflow-hidden rounded-xl border border-border bg-card">
+          <div className="flex min-h-64 items-center justify-center p-12">
+            <Component />
+          </div>
+        </div>
       </div>
     </div>
   );
